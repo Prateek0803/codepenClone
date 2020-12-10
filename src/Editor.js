@@ -18,13 +18,17 @@ export default function Editor(props) {
         onChange(value)
     }
 
-    const[open,setOpen] = useState(true)
+    const [open ,setOpen] = useState(true);
+
+    const handleClick = ()=>{
+        setOpen(prevOpen => !prevOpen)
+    }
 
     return (
         <div className={`editor-container${open? '':'collapsed'}`}>
             <div className="editor-title">
                 {displayName}
-                <button onCLick={()=> setOpen(!open)}> <AiOutlineArrowsAlt /> </button>
+                <button onCLick={handleClick}> <AiOutlineArrowsAlt /> </button>
             </div>
             <ControlledEditor 
                 onBeforeChange = {handleChange}
