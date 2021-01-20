@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live :- https://prateek0803.github.io/codepenClone/
 
 ## Available Scripts
 
